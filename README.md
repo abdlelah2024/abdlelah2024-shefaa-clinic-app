@@ -7,3 +7,8 @@ To get started, take a look at src/app/page.tsx.
 # shefaa-clinic-app
 # shefaa-clinic-app
 # shefaa-clinic-app
+
+
+
+تم تحديث هذا الملف لاختبار النشر التلقائي.
+
