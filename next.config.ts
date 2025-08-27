@@ -1,8 +1,7 @@
-
 import type {NextConfig} from 'next';
 const withPWA = require('next-pwa')({
-  dest: 'public'
-})
+  dest: 'public',
+});
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -13,9 +12,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  experimental: {
-    serverComponentsExternalPackages: ['firebase/app', 'firebase/firestore']
-  },
+  serverExternalPackages: ['firebase/app', 'firebase/firestore'],
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -23,10 +20,11 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'placehold.co',
         port: '',
-        pathname: '/**',
+        pathname: '/***',
       },
     ],
   },
 };
 
-export default withPWA(nextConfig);
+module.exports = withPWA(nextConfig);
+
