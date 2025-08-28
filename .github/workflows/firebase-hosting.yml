@@ -26,8 +26,8 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SHEFAA_CLINIC_APP }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_AHMED_QAID_SALEM }}'
           channelId: live
-          projectId: shefaa-clinic-app
+          projectId: ahmed-qaid-salem
 
 
