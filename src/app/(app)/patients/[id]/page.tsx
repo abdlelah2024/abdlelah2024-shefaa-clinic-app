@@ -81,6 +81,14 @@ const MedicalHistoryCard = ({ patient }: { patient: Patient }) => (
     </Card>
 );
 
+export async function generateStaticParams() {
+  const patientsCollection = collection(db, 'patients');
+  const patientsSnapshot = await getDocs(patientsCollection);
+  const paths = patientsSnapshot.docs.map(doc => ({
+    id: doc.id,
+  }));
+  return paths;
+}
 
 export default function PatientProfilePage() {
   const params = useParams();
@@ -201,3 +209,5 @@ export default function PatientProfilePage() {
     </>
   );
 }
+
+
