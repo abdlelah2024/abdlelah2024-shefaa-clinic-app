@@ -1,6 +1,3 @@
-
-'use client';
-
 import { useParams, useRouter } from 'next/navigation';
 import { useState, useMemo, useEffect, useCallback } from 'react';
 import type { Patient, Appointment, Doctor } from '@/lib/types';
@@ -208,6 +205,4 @@ export default function PatientProfilePage() {
       </AddAppointmentDialog>
     </>
   );
-}
-
-
+                                                         }
